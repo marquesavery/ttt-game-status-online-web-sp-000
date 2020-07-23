@@ -55,6 +55,8 @@ def over?(board)
     WIN_COMBINATIONS.each do |w|
       if won?(board) == w
         true
+      else
+        false
       end
     end
   end
