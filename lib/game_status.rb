@@ -51,7 +51,7 @@ end
 def over?(board)
   if draw?(board) == true
     true
-  else WIN_COMBINATIONS.all?{|w| won?(board) == w }
+  else WIN_COMBINATIONS.select{|w| won?(board) == w }
     true
   end
 end
