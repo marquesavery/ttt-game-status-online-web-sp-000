@@ -60,8 +60,13 @@ def over?(board)
 end
 
 
-def winner(board)
+def winner?(board)
   won?(board).all? do |win|
     win == "X"
+    elsif win[0] == "O"
+      return "O"
+    else
+      return nil
+    end
   end
 end
