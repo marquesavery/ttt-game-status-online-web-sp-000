@@ -65,7 +65,6 @@ def winner(board)
       true
     elsif
       won?(board)[0] == "O"
-      end
     end
   end
 end
