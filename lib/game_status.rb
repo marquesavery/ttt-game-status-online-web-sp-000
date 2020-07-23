@@ -60,9 +60,19 @@ end
 
 
 def winner(board)
-  if WIN_COMBINATIONS.all?{|w| won?(board) == "X"}
-    return "X"
-  elsif WIN_COMBINATIONS.all?{|w| won?(board) == "O"}
-    return "O"
+  if over?(board) == true
+    if won?(board) == ["O", "O", "O"]
+      return "O"
+    elsif won?(board) == ["X", "X", "X"]
+      return "X"
+    end
   end
+end
+
+
+#  if WIN_COMBINATIONS.all?{|w| won?(board) == "X"}
+#    return "X"
+#  elsif WIN_COMBINATIONS.all?{|w| won?(board) == "O"}
+#    return "O"
+#  end
 end
