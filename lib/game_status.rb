@@ -49,7 +49,7 @@ def draw?(board)
 end
 
 def over?(board)
-  WIN_COMBINATIONS.select do |w|
+  WIN_COMBINATIONS.any? do |w|
     if draw?(board) == true
       true
     elsif won?(board) == w
