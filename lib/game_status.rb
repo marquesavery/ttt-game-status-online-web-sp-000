@@ -49,12 +49,12 @@ def draw?(board)
 end
 
 def over?(board)
-  win_combination = true
-  if won?(board) == win_combination
-    true
-  else draw?(board) == true
-    false
-  end
+  WIN_COMBINATIONS.each
+    if won?(board) == WIN_COMBINATIONS.each
+      true
+    else draw?(board) == true
+      false
+    end
 end
 
 
