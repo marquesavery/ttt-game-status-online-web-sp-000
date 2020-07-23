@@ -75,4 +75,4 @@ end
 #  elsif WIN_COMBINATIONS.all?{|w| won?(board) == "O"}
 #    return "O"
 #  end
-end
+
