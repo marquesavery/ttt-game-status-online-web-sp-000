@@ -50,12 +50,13 @@ end
 
 def over?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    if won?(board) == win_combination
+    if draw?(board) == true
       true
-    else draw?(board) == true
-      false
+    elsif won?(board) == win_combination
+      true
     end
   end
+  false
 end
 
 
