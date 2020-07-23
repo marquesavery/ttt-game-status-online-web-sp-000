@@ -51,8 +51,8 @@ end
 def over?(board)
   if draw?(board) == true
     true
-  elsif full?(board) == true
-    true
+  else
+    false
   end
 end
 
