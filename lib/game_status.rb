@@ -61,13 +61,5 @@ end
 
 
 def winner(board)
-  won?(board).all? do |win|
-    if win == "X"
-      return "X"
-    elsif win == "O"
-      return "O"
-    else
-      return nil
-    end
-  end
+
 end
