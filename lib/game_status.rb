@@ -51,7 +51,7 @@ end
 def over?(board)
   if draw?(board) == true
     true
-  elsif won?(board) == true
+  elsif won?(board) == WIN_COMBINATIONS
     true
   end
 end
