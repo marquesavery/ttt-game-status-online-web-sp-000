@@ -77,10 +77,3 @@ def winner(board)
     end
   end
 end
-
-
-#  if WIN_COMBINATIONS.all?{|w| won?(board) == "X"}
-#    return "X"
-#  elsif WIN_COMBINATIONS.all?{|w| won?(board) == "O"}
-#    return "O"
-#  end
