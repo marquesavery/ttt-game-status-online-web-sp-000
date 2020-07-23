@@ -53,6 +53,8 @@ def over?(board)
     true
   elsif WIN_COMBINATIONS.each{|w| won?(board) == w }
     true
+  else
+    false
   end
 end
 
