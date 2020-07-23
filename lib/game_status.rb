@@ -49,8 +49,8 @@ def draw?(board)
 end
 
 def over?(board)
-  WIN_COMBINATIONS.each
-    if won?(board) == WIN_COMBINATIONS.each
+  WIN_COMBINATIONS.each do |win_combination|
+    if won?(board) == win_combination
       true
     else draw?(board) == true
       false
