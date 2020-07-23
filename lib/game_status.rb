@@ -60,7 +60,7 @@ def over?(board)
 end
 
 
-def winner?(board)
+def winner(board)
   won?(board).all? do |win|
     if win == "X"
       return "X"
