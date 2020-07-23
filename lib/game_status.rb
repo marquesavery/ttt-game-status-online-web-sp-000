@@ -61,10 +61,11 @@ end
 
 def winner(board)
   if over?(board) == true
-    if won?(board) == ["O", "O", "O"]
-      return "O"
-    elsif won?(board) == ["X", "X", "X"]
-      return "X"
+    if won?(board)[0] == "X"
+      true
+    elsif
+      won?(board)[0] == "O"
+      end
     end
   end
 end
@@ -75,4 +76,3 @@ end
 #  elsif WIN_COMBINATIONS.all?{|w| won?(board) == "O"}
 #    return "O"
 #  end
-
