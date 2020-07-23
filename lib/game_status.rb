@@ -57,6 +57,7 @@ def over?(board)
         true
       end
     end
+    false
   end
 end
 
