@@ -56,14 +56,14 @@ def over?(board)
       true
     end
   end
-#  if draw?(board) == true
-#    true
-#  elsif WIN_COMBINATIONS.all?{|w| won?(board) == w }
-#    true
-#  end
 end
 
 
 def winner(board)
-
+  WIN_COMBINATIONS.any? do |w|
+    if won?(board) == w
+      if w[0] == "X" && w[1] == "X" && w[2] == "X"
+        return "X"
+      elsif w[0] == "O" && w[1] == "O" && w[2] == "O"
+        return "O"
 end
