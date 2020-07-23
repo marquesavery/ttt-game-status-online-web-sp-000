@@ -51,7 +51,7 @@ end
 def over?(board)
   if draw?(board) == true
     true
-  elsif
+  else
     WIN_COMBINATIONS.each do |w|
       if won?(board) == w
         true
