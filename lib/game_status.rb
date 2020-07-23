@@ -41,22 +41,13 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board) == false
-    true
-  else full?(board) == false
+  if full?(board) == false
     false
   end
 end
 
 def over?(board)
-  WIN_COMBINATIONS.each do |win_combination|
-    if draw?(board) == true
-      true
-    elsif won?(board) == win_combination
-      true
-    end
-  end
-  false
+  
 end
 
 
