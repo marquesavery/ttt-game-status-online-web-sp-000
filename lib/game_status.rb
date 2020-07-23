@@ -49,7 +49,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) == true
+  if won?(board) == win_combination
     true
   else draw?(board) == true
     false
