@@ -66,4 +66,6 @@ def winner(board)
         return "X"
       elsif w[0] == "O" && w[1] == "O" && w[2] == "O"
         return "O"
+      end
+    end
 end
